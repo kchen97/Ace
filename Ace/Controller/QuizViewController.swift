@@ -8,11 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class QuizViewController: UIViewController {
 
+    //MARK: Properties
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet var answerButtions: [UIButton]!
+    private var someQuiz = Quiz()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        questionLabel.text = someQuiz.bank[0]
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +27,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func navButtonPressed(_ sender: Any) {
+    }
+    
 }
 
