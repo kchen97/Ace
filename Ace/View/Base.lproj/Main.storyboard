@@ -28,12 +28,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="io1-wc-XHQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="io1-wc-XHQ">
                                 <rect key="frame" x="0.0" y="119" width="375" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="oU0-bn-bxY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -98,6 +98,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Answer"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whZ-g6-J0d"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQz-oa-Qh2">
                                         <rect key="frame" x="0.0" y="55" width="305" height="40"/>
@@ -106,6 +109,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Answer"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Le-lp-GLH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uA-m1-f8J">
                                         <rect key="frame" x="0.0" y="110" width="305" height="40"/>
@@ -114,6 +120,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Answer"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3f-Hq-vlp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8W-ta-ETk">
                                         <rect key="frame" x="0.0" y="165" width="305" height="40"/>
@@ -122,6 +131,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Answer"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bub-HU-Ia4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yd-8p-TCJ">
                                         <rect key="frame" x="0.0" y="220" width="305" height="40"/>
@@ -130,6 +142,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Answer"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFI-ov-JVD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -166,11 +181,11 @@
                     <connections>
                         <outlet property="questionLabel" destination="io1-wc-XHQ" id="QlH-e6-mKs"/>
                         <outlet property="timeLabel" destination="qIY-aa-Q7t" id="KDr-wK-qgF"/>
-                        <outletCollection property="answerButtions" destination="rlx-vp-vAG" collectionClass="NSMutableArray" id="vXz-Wy-hsz"/>
-                        <outletCollection property="answerButtions" destination="dQz-oa-Qh2" collectionClass="NSMutableArray" id="nVR-XY-HLM"/>
-                        <outletCollection property="answerButtions" destination="5uA-m1-f8J" collectionClass="NSMutableArray" id="QyX-FN-5mo"/>
-                        <outletCollection property="answerButtions" destination="v8W-ta-ETk" collectionClass="NSMutableArray" id="lG6-Og-kRZ"/>
-                        <outletCollection property="answerButtions" destination="4Yd-8p-TCJ" collectionClass="NSMutableArray" id="YKa-ts-h4d"/>
+                        <outletCollection property="answerButtons" destination="rlx-vp-vAG" collectionClass="NSMutableArray" id="NId-nN-7x3"/>
+                        <outletCollection property="answerButtons" destination="dQz-oa-Qh2" collectionClass="NSMutableArray" id="DWG-4v-ceV"/>
+                        <outletCollection property="answerButtons" destination="5uA-m1-f8J" collectionClass="NSMutableArray" id="E40-yM-va9"/>
+                        <outletCollection property="answerButtons" destination="v8W-ta-ETk" collectionClass="NSMutableArray" id="4Cs-dJ-FAt"/>
+                        <outletCollection property="answerButtons" destination="4Yd-8p-TCJ" collectionClass="NSMutableArray" id="6bS-nD-Cik"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

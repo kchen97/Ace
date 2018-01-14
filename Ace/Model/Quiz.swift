@@ -23,14 +23,14 @@ class Quiz {
         questionBank[0].addAnswer(text: "(E) -x", correct: false)
     }
     
-    func loadQuestionText() -> String {
-        let questionText = questionBank[nextQuestionIndex].question
+    func loadQuestion() -> Question {
+        let question = questionBank[nextQuestionIndex]
         nextQuestionIndex += 1
         
         if nextQuestionIndex >= questionBank.count {
             nextQuestionIndex = 0
         }
         
-        return questionText
+        return question
     }
 }

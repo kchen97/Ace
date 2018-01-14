@@ -10,12 +10,12 @@ import Foundation
 
 class Question {
     
-    var question : String
-    private var correctAnswer : Int?
-    private var answerBank = [String]()
+    var text : String
+    var correctAnswer : Int?
+    var answerBank = [String]()
     
     init(_ question : String) {
-        self.question = question
+        self.text = question
         correctAnswer = nil
     }
     
